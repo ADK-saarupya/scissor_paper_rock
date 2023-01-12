@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+body{
+    background-color: rgb(101, 101, 121)
+}
+main{
+    width: 100%;
+}
+.container{
+    width: 60%;
+    margin: 5rem auto;
+    
+}
+.winner{
+    text-align: center;
+    margin: 2.5rem 0;
+    
+}
+#winnerText{
+    color: #3fb996;
+    font-size: 30px;
+}
+.scoreBoard{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+#playerScore,#computerScore{
+    font-size: 35px !important;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pic{
+    display: flex;
+    justify-content: space-around;
+}
+#playersPng img{
+    transform: scaleX(-1);
+}
+.pic img{
+    height: 11rem;
+    padding: 1rem 0;
+    position: relative;
+    top: 0px;
+    
+}
+.animate{
+    animation-duration: 0.5s;
+    animation-iteration-count:3;
+    animation-name: upDown;
+}
+@keyframes upDown {
+    0% {top:0px; }
+    50%{top :40px;}
+    100%{top:0px; }
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+button{
+    background-color:#3fb996 ;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow:0px 0px 16px rgb(134, 88, 88) ;
+   
+}
+
+.chooseItem button{
+    margin: 1rem;
+    width: 6rem;
+    
+    
+}
+

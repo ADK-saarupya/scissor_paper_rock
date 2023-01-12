@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock_paper_scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <div class="container">
+        <div class="winner">
+            <p id="winnerText">...</p>
+        </div>
+        <div class="scoreBoard">
+            <div class="players score">
+                <p>Player</p>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="computer score">
+                <p>Computer</p>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+        <div class="pic">
+            <div id="playersPng">
+                <img src="./images/rock.png" class="hand" id="playersHand">
+            </div>
+            <div id="computerPng">
+                <img src="./images/rock.png" class="hand" id="computersHand">
+            </div>
+        </div>
+        <div class="button">
+            <!-- <div class="mainBtn"> -->
+            <button id="play">choose any item</button>
+            <!-- </div> -->
+            <div class="chooseItem">
+                <button class="buttonItem">rock</button>
+                <button class="buttonItem">scissor</button>
+                <button class="buttonItem">paper</button>
+            </div>
+        </div>
+        
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
